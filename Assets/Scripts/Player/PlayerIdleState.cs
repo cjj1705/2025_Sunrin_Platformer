@@ -9,8 +9,7 @@ public class PlayerIdleState : State<Player>
 
     public override void Update(Player entity)
     {
-        // TODO : InputSystem º¯°æ
-        if (Input.GetKey(KeyCode.D))
+        if (PlayerInputManager.Instance.Move.ReadValue<Vector2>().x != 0f)
         {
             entity.StateMachine.ChangeState(entity.States[StateType.Move]);
         }

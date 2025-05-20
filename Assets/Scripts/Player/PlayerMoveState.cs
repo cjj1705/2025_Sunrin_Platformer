@@ -9,9 +9,10 @@ public class PlayerMoveState : State<Player>
 
     public override void Update(Player entity)
     {
-        if (Input.GetKey(KeyCode.D))
+        if (PlayerInputManager.Instance.Move.ReadValue<Vector2>().x != 0f)
         {
-            entity.Rigidbody2D.MovePosition(entity.Rigidbody2D.position + Vector2.right * Time.deltaTime);
+            entity.Rigidbody2D.MovePosition(entity.Rigidbody2D.position +
+                new Vector2(PlayerInputManager.Instance.Move.ReadValue<Vector2>().x, 0) * Time.deltaTime);
         }
         else
         {
