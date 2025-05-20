@@ -453,6 +453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rigidbody2D: {fileID: 0}
+  PlayerData: {fileID: 11400000, guid: b28eca5e4bb5ce6458433efa01aaae80, type: 2}
 --- !u!114 &982598754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,6 +466,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d514d4c66f6241469f3c4c6808d3145, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Move:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 9d3a87fc-8184-425a-bdea-4a294a5cef9f
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
 --- !u!1 &1457882163
 GameObject:
   m_ObjectHideFlags: 0

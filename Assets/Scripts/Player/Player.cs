@@ -19,10 +19,13 @@ public class Player : MonoBehaviour
     public Rigidbody2D Rigidbody2D;
     #endregion
 
+    public PlayerData PlayerData;
+
     private void Awake()
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
     }
+
     private void Start()
     {
         States = new Dictionary<StateType, State<Player>>();
