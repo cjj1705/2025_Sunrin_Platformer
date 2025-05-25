@@ -3,29 +3,29 @@ guid: 5a295a8fcda6c9d4aaf474eebbd3abf7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3210408193699095417
-    second: Sprite_Player_Electric_Move_0
+      213: 2376477036302159399
+    second: Sprite_Player_Move_0
   - first:
-      213: 5697817640197508598
-    second: Sprite_Player_Electric_Move_1
+      213: -4108758948255052980
+    second: Sprite_Player_Move_1
   - first:
-      213: -4987850723777326677
-    second: Sprite_Player_Electric_Move_2
+      213: 6699203431013816311
+    second: Sprite_Player_Move_2
   - first:
-      213: 3553165345862279467
-    second: Sprite_Player_Electric_Move_3
+      213: -5684925090099361823
+    second: Sprite_Player_Move_3
   - first:
-      213: -6424305550428196435
-    second: Sprite_Player_Electric_Move_4
+      213: -233239967486827886
+    second: Sprite_Player_Move_4
   - first:
-      213: 5496724734336348300
-    second: Sprite_Player_Electric_Move_5
+      213: 4063986561974752895
+    second: Sprite_Player_Move_5
   - first:
-      213: 1439505768135535851
-    second: Sprite_Player_Electric_Move_6
+      213: 3526646549434743013
+    second: Sprite_Player_Move_6
   - first:
-      213: -4874312824823464743
-    second: Sprite_Player_Electric_Move_7
+      213: -4082041564658052481
+    second: Sprite_Player_Move_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,177 +121,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite_Player_Electric_Move_0
+      name: Sprite_Player_Move_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 78cdf8ed1c65273d0800000000000000
-      internalID: -3210408193699095417
+      spriteID: 72ec9adf541faf020800000000000000
+      internalID: 2376477036302159399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Player_Electric_Move_1
+      name: Sprite_Player_Move_1
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6fd4de694f6b21f40800000000000000
-      internalID: 5697817640197508598
+      spriteID: c4bcc857181caf6c0800000000000000
+      internalID: -4108758948255052980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Player_Electric_Move_2
+      name: Sprite_Player_Move_2
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba1d398813897cab0800000000000000
-      internalID: -4987850723777326677
+      spriteID: 7f718afc60a58fc50800000000000000
+      internalID: 6699203431013816311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Player_Electric_Move_3
+      name: Sprite_Player_Move_3
       rect:
         serializedVersion: 2
         x: 384
         y: 0
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b21695c7e016f4130800000000000000
-      internalID: 3553165345862279467
+      spriteID: 1e70ce520c61b11b0800000000000000
+      internalID: -5684925090099361823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Player_Electric_Move_4
+      name: Sprite_Player_Move_4
       rect:
         serializedVersion: 2
         x: 512
         y: 0
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da1382aa32848d6a0800000000000000
-      internalID: -6424305550428196435
+      spriteID: 292268e3c7d53ccf0800000000000000
+      internalID: -233239967486827886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Player_Electric_Move_5
+      name: Sprite_Player_Move_5
       rect:
         serializedVersion: 2
         x: 640
         y: 0
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c80b832e50a484c40800000000000000
-      internalID: 5496724734336348300
+      spriteID: f7657760f3e266830800000000000000
+      internalID: 4063986561974752895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Player_Electric_Move_6
+      name: Sprite_Player_Move_6
       rect:
         serializedVersion: 2
         x: 768
         y: 0
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bec28d98ed62af310800000000000000
-      internalID: 1439505768135535851
+      spriteID: 5e83a6b0a5a21f030800000000000000
+      internalID: 3526646549434743013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Player_Electric_Move_7
+      name: Sprite_Player_Move_7
       rect:
         serializedVersion: 2
         x: 896
         y: 0
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9dc3440af46fa5cb0800000000000000
-      internalID: -4874312824823464743
+      spriteID: f725d2413dca957c0800000000000000
+      internalID: -4082041564658052481
       vertices: []
       indices: 
       edges: []
@@ -300,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 275ba990e4f7f414b88e3d3c336b0fd3
+    spriteID: dda93c3899c4ae44e92366501ef8f5d9
     internalID: 0
     vertices: []
     indices: 
@@ -310,14 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Sprite_Player_Electric_Move_0: -3210408193699095417
-      Sprite_Player_Electric_Move_1: 5697817640197508598
-      Sprite_Player_Electric_Move_2: -4987850723777326677
-      Sprite_Player_Electric_Move_3: 3553165345862279467
-      Sprite_Player_Electric_Move_4: -6424305550428196435
-      Sprite_Player_Electric_Move_5: 5496724734336348300
-      Sprite_Player_Electric_Move_6: 1439505768135535851
-      Sprite_Player_Electric_Move_7: -4874312824823464743
+      Sprite_Player_Move_0: 2376477036302159399
+      Sprite_Player_Move_1: -4108758948255052980
+      Sprite_Player_Move_2: 6699203431013816311
+      Sprite_Player_Move_3: -5684925090099361823
+      Sprite_Player_Move_4: -233239967486827886
+      Sprite_Player_Move_5: 4063986561974752895
+      Sprite_Player_Move_6: 3526646549434743013
+      Sprite_Player_Move_7: -4082041564658052481
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

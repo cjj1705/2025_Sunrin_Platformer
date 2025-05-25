@@ -4,7 +4,9 @@ using UnityEngine;
 public enum StateType
 {
     Idle,
-    Move
+    Move,
+    Jump,
+    Fall
 }
 
 public class Player : MonoBehaviour
@@ -17,6 +19,8 @@ public class Player : MonoBehaviour
     #region Component
     [HideInInspector]
     public Rigidbody2D Rigidbody2D;
+    [HideInInspector]
+    public Animator Animator;
     #endregion
 
     public PlayerData PlayerData;
@@ -24,6 +28,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
+        Animator = GetComponentInChildren<Animator>();
     }
 
     private void Start()
@@ -34,6 +39,8 @@ public class Player : MonoBehaviour
         // 상태 추가
         States.Add(StateType.Idle, new PlayerIdleState());
         States.Add(StateType.Move, new PlayerMoveState());
+        States.Add(StateType.Jump, new PlayerJumpState());
+        States.Add(StateType.Fall, new PlayerFallState());
 
         StateMachine.Setup(this, States[StateType.Idle]);
     }

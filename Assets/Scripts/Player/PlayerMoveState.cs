@@ -2,26 +2,41 @@ using UnityEngine;
 
 public class PlayerMoveState : State<Player>
 {
+    private float moveInput;
+
     public override void Enter(Player player)
     {
-        // TODO : 애니메이션 재생
+        player.Animator.SetTrigger("Move");
     }
 
     public override void Update(Player player)
     {
-        if (PlayerInputManager.Instance.Move.ReadValue<Vector2>().x != 0f)
+        if (player.Rigidbody2D.linearVelocityY < 0f)
         {
-            player.Rigidbody2D.MovePosition(player.Rigidbody2D.position +
-                new Vector2(PlayerInputManager.Instance.Move.ReadValue<Vector2>().x, 0) * player.PlayerData.MoveSpeed * Time.deltaTime);
+            player.StateMachine.ChangeState(player.States[StateType.Fall]);
+            return;
+        }
+
+        if (PlayerInputManager.Instance.Jump.IsPressed())
+        {
+            player.StateMachine.ChangeState(player.States[StateType.Jump]);
+        }
+
+        moveInput = PlayerInputManager.Instance.Move.ReadValue<Vector2>().x;
+
+        if (moveInput != 0f)
+        {
+            player.Rigidbody2D.linearVelocityX = moveInput * player.PlayerData.MoveSpeed;
         }
         else
         {
+            player.Rigidbody2D.linearVelocityX = 0f;
             player.StateMachine.ChangeState(player.States[StateType.Idle]);
         }
     }
 
     public override void Exit(Player player)
     {
-
+        player.Animator.ResetTrigger("Move");
     }
 }

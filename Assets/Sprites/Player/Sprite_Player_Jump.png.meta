@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: 218a70b2139bb3c4ba2ec564e42a6b06
+guid: 24b54d69b46bea14693e43db7baf134f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 385462160317078283
-    second: Sprite_Player_Electric_Idle_0
+      213: -5147301216452338692
+    second: Sprite_Player_Electric_Jump_0
   - first:
-      213: 8153933066620371932
-    second: Sprite_Player_Electric_Idle_1
+      213: 4418967174841953931
+    second: Sprite_Player_Electric_Jump_1
   - first:
-      213: 6563133080708880208
-    second: Sprite_Player_Electric_Idle_2
+      213: 7390092848230915213
+    second: Sprite_Player_Electric_Jump_2
   - first:
-      213: 2209859671830549831
-    second: Sprite_Player_Electric_Idle_3
-  - first:
-      213: -961214935724434980
-    second: Sprite_Player_Electric_Idle_4
-  - first:
-      213: 3894627492769813692
-    second: Sprite_Player_Electric_Idle_5
+      213: -4868569257085988492
+    second: Sprite_Player_Electric_Jump_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +60,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,133 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite_Player_Electric_Idle_0
+      name: Sprite_Player_Jump_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b0bdd04eacf695500800000000000000
-      internalID: 385462160317078283
+      spriteID: 39ba6baf542cc32419e682c1196f9d9a
+      internalID: -2052799282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Player_Electric_Idle_1
+      name: Sprite_Player_Jump_1
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cd308363ce6982170800000000000000
-      internalID: 8153933066620371932
+      spriteID: c3a874f1ea6f2304384a5592f898222f
+      internalID: -541734038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Player_Electric_Idle_2
+      name: Sprite_Player_Jump_2
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 057944193cee41b50800000000000000
-      internalID: 6563133080708880208
+      spriteID: 7ee3323ef7c85c54cb09d53f8f72b703
+      internalID: 1035762896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Player_Electric_Idle_3
+      name: Sprite_Player_Jump_3
       rect:
         serializedVersion: 2
         x: 384
         y: 0
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 745dbe6c9affaae10800000000000000
-      internalID: 2209859671830549831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite_Player_Electric_Idle_4
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd95853db1419a2f0800000000000000
-      internalID: -961214935724434980
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite_Player_Electric_Idle_5
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cb4d30fe11f7c0630800000000000000
-      internalID: 3894627492769813692
+      spriteID: 7b0d05d1b350c5a41a24e6a35c3cc91e
+      internalID: 42306328
       vertices: []
       indices: 
       edges: []
@@ -250,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0a264141136721444b7e045d8f5b04fe
+    spriteID: 54ae5263caff8ba4792a6c6edc193cbb
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Sprite_Player_Electric_Idle_0: 385462160317078283
-      Sprite_Player_Electric_Idle_1: 8153933066620371932
-      Sprite_Player_Electric_Idle_2: 6563133080708880208
-      Sprite_Player_Electric_Idle_3: 2209859671830549831
-      Sprite_Player_Electric_Idle_4: -961214935724434980
-      Sprite_Player_Electric_Idle_5: 3894627492769813692
+      Sprite_Player_Jump_0: -2052799282
+      Sprite_Player_Jump_1: -541734038
+      Sprite_Player_Jump_2: 1035762896
+      Sprite_Player_Jump_3: 42306328
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

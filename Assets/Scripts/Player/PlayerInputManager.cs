@@ -10,6 +10,9 @@ public class PlayerInputManager : MonoBehaviour
     [HideInInspector]
     public InputAction Move;
 
+    [HideInInspector]
+    public InputAction Jump;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -28,5 +31,6 @@ public class PlayerInputManager : MonoBehaviour
         PlayerInputAction.Enable();
 
         Move = PlayerInputAction.Player.Move;
+        Jump = PlayerInputAction.Player.Jump;
     }
 }

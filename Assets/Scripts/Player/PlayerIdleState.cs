@@ -4,12 +4,22 @@ public class PlayerIdleState : State<Player>
 {
     public override void Enter(Player player)
     {
-        // TODO : 애니메이션 재생
+        player.Animator.SetTrigger("Idle");
     }
 
     public override void Update(Player player)
     {
-        if (PlayerInputManager.Instance.Move.ReadValue<Vector2>().x != 0f)
+        if (player.Rigidbody2D.linearVelocityY < 0f)
+        {
+            player.StateMachine.ChangeState(player.States[StateType.Fall]);
+            return;
+        }
+
+        if (PlayerInputManager.Instance.Jump.IsPressed())
+        {
+            player.StateMachine.ChangeState(player.States[StateType.Jump]);
+        }
+        else if (PlayerInputManager.Instance.Move.ReadValue<Vector2>().x != 0f)
         {
             player.StateMachine.ChangeState(player.States[StateType.Move]);
         }
@@ -17,6 +27,6 @@ public class PlayerIdleState : State<Player>
 
     public override void Exit(Player player)
     {
-
+        player.Animator.ResetTrigger("Idle");
     }
 }
