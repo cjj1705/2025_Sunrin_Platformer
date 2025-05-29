@@ -21,6 +21,8 @@ public class Player : MonoBehaviour
     public Rigidbody2D Rigidbody2D;
     [HideInInspector]
     public Animator Animator;
+    [HideInInspector]
+    public SpriteRenderer SpriteRenderer;
     #endregion
 
     public PlayerData PlayerData;
@@ -29,6 +31,7 @@ public class Player : MonoBehaviour
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
         Animator = GetComponentInChildren<Animator>();
+        SpriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     private void Start()
@@ -48,5 +51,20 @@ public class Player : MonoBehaviour
     private void Update()
     {
         StateMachine.Update();
+
+        CheckFlipX();
+    }
+
+    private void CheckFlipX()
+    {
+        // TODO : 특정 상태를 제외하고 Flip
+        if (Rigidbody2D.linearVelocityX > 0.01f)
+        {
+            SpriteRenderer.flipX = false;
+        }
+        else if (Rigidbody2D.linearVelocityX < -0.01f)
+        {
+            SpriteRenderer.flipX = true;
+        }
     }
 }
