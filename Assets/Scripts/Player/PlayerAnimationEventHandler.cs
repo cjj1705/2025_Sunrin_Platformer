@@ -3,10 +3,10 @@ using UnityEngine;
 public class PlayerAnimationEventHandler : MonoBehaviour
 {
     [SerializeField]
-    private ParticleSystem moveEffect;
+    private ParticleSystem jumpEffect;
 
-    public void PlayMoveEffect()
+    public void PlayJumpEffect()
     {
-        moveEffect.Play();
+        jumpEffect.Play();
     }
 }
